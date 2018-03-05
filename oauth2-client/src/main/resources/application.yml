@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: client
+server:
+  port: 9081
+  # use a different path for the client (otherwise cookies are shared)
+  context_path: /client
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      client-id: myClient
+      client-secret: cgx
+      access-token-uri: http://localhost:9080/oauth/authorize
+      user-authorization-uri: http://localhost:9080/oauth/token
+    resource:
+       userInfoUri: http://localhost:9080/auth/user/me
+
+#logging:
+#  level:
+#    org: debug
