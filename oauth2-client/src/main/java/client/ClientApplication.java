@@ -56,7 +56,6 @@ public class ClientApplication {
 		return result;
 	}
 
-
 	@Bean
 	public OAuth2RestOperations restTemplate(OAuth2ClientContext oauth2ClientContext) {
 		return new OAuth2RestTemplate(resource(), oauth2ClientContext);
