@@ -1,0 +1,8 @@
+
+spring:
+  profiles:
+    active: loc
+  application:
+    name: vanilla
+server:
+  port: 9082

@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: vanilla
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.1.39:3306/pms?useUnicode=true&characterEncoding=utf8
+    username: pms
+    password: Pms@123456
+    driver-class-name: com.mysql.jdbc.Driver
+    minIdle: 1
+    maxActive: 2
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+management:
+  context_path: /admin
+security:
+  user:
+    password: password2
+  oauth2:
+    resource:
+      filter-order: 3
