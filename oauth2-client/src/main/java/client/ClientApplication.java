@@ -49,21 +49,10 @@ public class ClientApplication {
 	
 	@Autowired
 	private OAuth2RestOperations restTemplate;
-
-//	@Autowired
-//    private OAuth2RestTemplate restTemplate2;
-
-	@Autowired
-    private AuthorizationCodeResourceDetails authorizationCodeResourceDetails;
-
-//	@Autowired
-//	private OAuth2ProtectedResourceDetails auth2ProtectedResourceDetails;
 	
 	@RequestMapping("/get")
 	public List<String> home() {
-        List<String> result = new ArrayList<>();
-        result.add("hello");
-		result = restTemplate.getForObject(baseUrl + "/gx", List.class);
+        List<String> result = restTemplate.getForObject(baseUrl + "/gx", List.class);
 		return result;
 	}
 
