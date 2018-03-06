@@ -19,11 +19,4 @@ public class LoginController {
         }
         return "login";
     }
-
-    @RequestMapping("/login/github")
-    public String loginGitHub(String code, ModelMap modelMap,String status) {
-        modelMap.put("cgx","cgx");
-        return "/";
-    }
-
 }
