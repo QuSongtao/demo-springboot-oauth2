@@ -30,7 +30,7 @@ NULL,
 '{}',   
 '');  
 
-注意: 客户端密码是经过了BCryptPasswordEncoder()编码,所以先将密码编码完再INSERT
+注意: 客户端密码是经过了BCryptPasswordEncoder()编码,所以先将密码编码完再INSERT  
 `String encodePassword = new BCryptPasswordEncoder().encode("你真实密码")`
 
 注册用户SQL  
@@ -57,7 +57,7 @@ access_token访问资源地址
 
 ## GITHUB客户端
 `demo-oauth2-githubclient` github oauth2 客户端  
-首先需要有github账号,没有的可以花2分钟去注册一个,登录github, 在 `https://github.com/settings/developers` 界面注册 OAuth App
+首先需要有github账号,没有的可以花2分钟去注册一个,登录github, 在 `https://github.com/settings/developers` 界面注册 OAuth App  
 配置Homepage URL : http://localhost:8090  
 配置Authorization callback URL: http://localhost:8090/login/github  
 注意此处配置的/login/github需要在filter中进行配置  
