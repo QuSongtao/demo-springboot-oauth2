@@ -2,7 +2,7 @@
 所有示例的授权模式都为授权码模式(authorization code)
 
 ## JDBC模式的token存储
-先执行sql语句建表 `\oauth2-server\src\main\resources\oauth2.sql`,该结构为Spring官方提供,也可以自己进行改造.
+先执行sql语句建表 `\oauth2-server\src\main\resources\oauth2.sql`,该结构为Spring官方提供,也可以自己进行改造.  
 注册客户端SQL  
 INSERT INTO `oauth2`.`oauth_client_details`   
 (`client_id`,   
