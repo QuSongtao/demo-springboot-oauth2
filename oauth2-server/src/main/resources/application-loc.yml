@@ -11,13 +11,3 @@ spring:
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.MySQL5Dialect
-
-#security:
-#  oauth2:
-#    client:
-#      client-id: acme
-#      client-secret: acmesecret
-#      scope: read,write
-#      auto-approve-scopes: '.*'
-#  user:
-#    password: secret
